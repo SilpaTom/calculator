@@ -1,0 +1,100 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->  
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+
+
+<style>  
+ h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: rgb(80, 114, 225);  
+    color: white;  
+    }  
+  
+ #clear{  
+width: 270px;  
+border: 3px solid gray;  
+    border-radius: 3px;  
+    padding: 20px;  
+    background-color: red;  
+}  
+  
+.formstyle  
+{  
+width: 300px;  
+height: 530px;  
+margin: auto;  
+border: 3px solid rgb(80, 114, 225);  
+border-radius: 5px;  
+padding: 20px;  
+}  
+  
+
+button, input
+{  
+width: 10px;  
+background-color: rgb(118, 144, 233);  
+color: white;  
+border: 3px solid rgb(232, 193, 193);  
+border-radius: 5px;  
+padding: 26px; 
+margin:5px 7px; 
+font-size: 15px;  
+text-align: center;
+}  
+   
+  
+#result{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+
+  
+</style>  
+  
+</head>  
+<body>  
+<h1 > Calculator Program</h1>  
+<div class= "formstyle">  
+<form >  
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+  <input id = "result" type ="text" readonly style="text-align:right" placeholder="0">
+  <br> <br>  
+  <button type="button" onclick="display('1')">1</button>
+  <button type="button" onclick="display('2')">2</button>
+  <button type="button" onclick="display('3')">3</button>
+  <button type="button" onclick="display('+')" >+</button>
+  <br>  
+  <button type="button" onclick="display('4')" >4</button>
+  <button type="button" onclick="display('5')" >5</button>
+  <button type="button" onclick="display('6')" >6</button>
+  <button type="button" onclick="display('-')" >-</button>
+  <br>
+
+  <button type="button" onclick="display('7')"  >7</button>
+  <button type="button" onclick="display('8')"  >8</button>
+  <button type="button" onclick="display('9')"  >9</button>
+  <button type="button" onclick="display('*')" >*</button>
+  <br>
+  <button type="button" onclick="display('0')"  >0</button>
+  <button type="button" onclick="display('.')" >.</button>
+  <button type="button" onclick="equal()" >=</button>
+  <button type="button" onclick="display('/')" >/</button>
+  <br>
+  
+  <button onclick="clearAll()" type="button" style="width:130px" >AC</button>
+  <button onclick="back()" type="button" style="width:130px">&#9003 </button>
+  <br>   
+    
+</form>  
+</div>  
+</body>
+
+<script src="./cal.js"></script>
+</html>  
